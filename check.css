@@ -1,0 +1,12 @@
+
+.container{
+    height: 150px;
+    border: 1px solid rgb(18, 16, 16);
+    border-radius: 2px;
+    background-color: grey;
+    
+ }
+
+.blue{
+    background-color: blue;
+}
