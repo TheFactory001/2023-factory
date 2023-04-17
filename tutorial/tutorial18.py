@@ -1,0 +1,10 @@
+course = "python programming"
+print(course)
+print(course.upper())
+print(course.lower())
+print(course.title())
+print(course.strip())
+print(course.find("gra"))
+print(course.replace("p", "t"))
+print("pro" in course)
+print("goal"not in course)
