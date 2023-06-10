@@ -26,7 +26,7 @@ my_data = [{
         'type': 'album'
     }, 'type': 'track'}]
 
-print(my_data[0])
+#print(my_data[0])
 
 
 def get_track_name():
@@ -34,7 +34,7 @@ def get_track_name():
     return track_name
 
 
-print(get_track_name())
+#print(get_track_name())
 
 
 def get_album_title():
@@ -42,28 +42,27 @@ def get_album_title():
     return album_title
 
 
-print(get_album_title())
+#print(get_album_title())
 
 
-def get_duration():
-    duration = datetime.time(135)
-    return duration
+def get_duration_in_minutes():
+    duration_in_minutes = int(135/60) 
+    return duration_in_minutes
+
+print(get_duration_in_minutes())
+print(135%60)
+
+def get_link_to_the_song():
+    link = my_data[0]["link"]
+    return link
 
 
-print(get_duration())
+print(get_link_to_the_song())
 
 
-# def get_link_to_the_song():
-#     link = my_data[0]["link"]
-#     return link
+def get_artist_name():
+    artist_name = my_data[0]["artist"]["name"]
+    return artist_name
 
 
-# print(get_link_to_the_song())
-
-
-# def get_artist_name():
-#     artist_name = my_data[0]["artist"]["name"]
-#     return artist_name
-
-
-# print(get_artist_name())
+print(get_artist_name())
