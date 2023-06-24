@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Method Attribute</title>
+  </head>
+  <h2>Method Attribute</h2>
+  <p>This form will be submitted using GET method</p>
+  <body>
+    <form action="/action_page.php" target="_blank" method="get">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Sam" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      After you submit, notice that the forms values is visible in the address
+      bar of the new browser tab.
+    </p>
+  </body>
+</html>
