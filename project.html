@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: left;
+            padding: 20px;
+            gap: 46px;
+            border: 5px #c4dcf3;
+        }
+        table, td,tfoot, th{
+            padding: 10px;
+            gap: 5px;
+
+        }
+        thead{
+              color: white;
+              background-color: #427fef
+        }
+        tbody tr:nth-child(odd) {
+            background-color: lightblue;
+            row-gap: none;
+            padding: 5px;
+        }
+        tfoot{
+            background-color: blue;
+            text-align: left;
+            color: white;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            box-shadow: 0px 20px 20px lightgrey;
+            border-radius: 10px;
+        }
+        h1{
+            font-size: 50px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        </style>
+</head>
+<body>
+    <table>
+    <thead>
+        <tr>
+            <th colspan="3">Country OrderID OrderAmount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>USA</td>
+            <td>1000</td>
+            <td>$1300</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>1001</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>CA</td>
+            <td>1002</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>CA</td>
+            <td>1003</td>
+            <td>$1000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th colspan="2"> Total $5000</th>
+    </tfoot>
+</table>
+<br>
+<br>
+
+<div class="box"> 
+    <h1>FACTORY</h1></div>
+</body>
+</html>
