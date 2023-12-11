@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+h4{
+    color: white;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    animation: name duration 3s timing-function delay iteration-count direction fill-mode;
+}
+body{
+    background-image:url(/static/css/images/joel.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
