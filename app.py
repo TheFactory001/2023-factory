@@ -74,6 +74,8 @@ def weather():
         response= requests.get(city_url)
         city_data=response.json()
         print(city_data)
+        country=city_data["sys"]["country"]
+        return render_template("weather.html",city_data=city_data,country=country)
         
     return render_template("weather.html")
 
