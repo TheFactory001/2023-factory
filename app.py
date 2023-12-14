@@ -75,9 +75,28 @@ def weather():
         city_data=response.json()
         print(city_data)
         country=city_data["sys"]["country"]
-        return render_template("weather.html",city_data=city_data,country=country)
+        sunrise=city_data["sys"]["sunrise"]
+        temp=city_data["main"]["temp"]
+        lon=city_data["coord"]["lon"]
+        lat=city_data["coord"]["lat"]
+        pressure=city_data["main"]["pressure"]
+        humidity=city_data["main"]["humidity"]
+        sunset=city_data["sys"]["sunset"]
+        name=city_data["name"]
+        timezone=city_data["timezone"]
+        description=city_data["weather"][0]["description"]
+        return render_template("weather.html",city_data=city_data,country=country,sunrise=sunrise,
+                               temp=temp,lon=lon,lat=lat,pressure=pressure,humidity=humidity,sunset=sunset,
+                               name=name,timezone=timezone,description=description)
         
     return render_template("weather.html")
+
+# @app.route('/dict',methods=["GET","POST"])
+# def dict():
+#     if request.method=="POST":
+#         print(request.args.get("get"))
+#     return   render_template("dict.html")
+
 
 
 
