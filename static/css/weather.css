@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/static/css/images/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body form {
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  box-align: center;
+  display: flex;
+  margin-right: 250px;
+}
+
+.form-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5px;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+label {
+  display: block;
+  color: white;
+  font-size: 30px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 70px;
+  margin-left: 80px;
+  text-align: left;
+}
+.section1 {
+  width: 60%;
+  float: left;
+  line-height: 1.5;
+}
+.section2 {
+  width: 100%;
+  float: right;
+  line-height: 1.5;
+}
+.sect-icon {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: white;
+}

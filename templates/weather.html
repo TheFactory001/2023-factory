@@ -4,93 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <style>
-      * {
-        margin: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        background-image: url(/static/css/images/background3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: "Lucida calligraphy";
-        margin-right: auto;
-        color: white;
-        font-size: 30px;
-      }
-      .form-one {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        line-height: 1.5px;
-      }
-
-      input {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 160%;
-        max-width: 300px;
-        border-radius: 5px;
-        padding: 12px;
-      }
-
-      button {
-        background-color: black;
-        color: white;
-        width: 50%;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        cursor: pointer;
-      }
-      label {
-        display: block;
-        color: white;
-        font-size: 40px;
-      }
-      .sections {
-        display: flex;
-        justify-content: space-evenly;
-        column-gap: 50px;
-        margin-left: 80px;
-        text-align: left;
-      }
-      .section1 {
-        width: 60%;
-        float: left;
-        line-height: 1.5;
-      }
-      .section2 {
-        width: 60%;
-        float: right;
-        line-height: 1.5;
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/764462fdf1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/weather.css') }}"
+    />
   </head>
   <body>
     <form method="post">
       <div class="form-one">
-        <div class="title"><h2>Weather Data</h2></div>
-        <input type="text" name="city" /><br />
-        <button type="submit">search city</button>
+        <input type="text" name="city" placeholder="Enter city name..." /><br />
+        <div class="sect-icon">
+          <i class="fas fa-search icon"></i>
+          <button type="submit">City</button>
+        </div>
       </div>
+      <br />
 
       <div class="sections">
         <div class="section1">
