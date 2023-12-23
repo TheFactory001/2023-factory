@@ -1,0 +1,22 @@
+.body {
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.box {
+    flex-basis: 160rem;
+    flex-shrink: 1;
+    width: 5rem;
+    height: 5rem;
+    background: lightgray;
+}
+
+.box-one {
+    flex-shrink: 0.7;
+}
