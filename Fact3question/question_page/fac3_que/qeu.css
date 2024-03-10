@@ -1,0 +1,449 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 50;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #dddddd;
+}
+nav {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  background: #12065f;
+  font-family: montserrat;
+  height: 80px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .small-scrn {
+  display: none;
+}
+label.title {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+nav ul {
+  /* float: right;
+  margin-right: 20px;
+  line-height: 80px; */
+  display: flex;
+}
+nav ul li {
+  font-weight: bold;
+  padding-right: 2em;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active1,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 50px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.heading1 {
+  /* padding: 5px; */
+}
+.whole_body {
+  margin-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5em;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1em;
+  border-top: 4px solid #1d1264;
+}
+h2 {
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+
+.section2 {
+  color: black;
+  align-items: right;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.examples {
+  color: black;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  float: left;
+  margin-top: 15px;
+  gap: 8px;
+  column-count: 5px;
+  line-height: 2;
+  justify-content: space-around;
+}
+.example1 {
+  color: black;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  float: right;
+
+  gap: 0px;
+  column-count: 5px;
+  line-height: 2;
+  justify-content: space-evenly;
+}
+.container1 {
+  background-color: white;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em;
+}
+li {
+  font: 1em sans-serif;
+}
+
+.examples2 {
+  color: black;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  float: left;
+  gap: 0px;
+  column-count: 5px;
+  line-height: 2;
+  justify-content: space-around;
+}
+.container2 {
+  background-color: white;
+  border-radius: 0px;
+  padding: 1em;
+}
+.questions {
+  margin-top: 400px;
+  padding: 5px;
+  box-sizing: content-box;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+}
+footer {
+  background-color: #24262b;
+  line-height: 3;
+  border-radius: 5px;
+  padding: 1em;
+}
+.footer {
+  background-color: #24262b;
+  padding: 10px;
+}
+.foot-list {
+  width: 50%;
+  padding: 0 15px;
+  max-width: 1170px;
+  margin-right: 20px;
+  color: white;
+}
+button {
+  display: flex;
+  flex-direction: var(#12065f);
+}
+.container3 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  /* width: 420px; */
+  height: 120px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  border-top: 4px solid #1d1264;
+}
+.last {
+  border: 2px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  background: red;
+}
+
+@media screen and (max-width: 780px) {
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  nav .small-scrn {
+    display: flex;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9b8fe9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all ease 0.5s;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  nav .small-scrn {
+    display: flex;
+  }
+  #wrapper-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    width: 100%;
+  }
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+  }
+  .section2 {
+    padding-bottom: 10px;
+    border-radius: 5px;
+    padding: 1em;
+  }
+  .container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-count: auto;
+    justify-content: space-evenly;
+    background-color: rgb(145, 206, 39);
+    padding: 1em;
+  }
+}
+
+/* @media (width < 768px) {
+  label.title {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .questions {
+    margin-top: 400px;
+    padding: 5px;
+    box-sizing: content-box;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+  }
+}
+@media (width<= 768px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9b8fe9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active1,
+  a:hover {
+    background: none;
+    color: white;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .container3 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+}
+
+#wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5em;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1em;
+  border-top: 4px solid #1d1264;
+}
+h2 {
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+
+@media (width < 600px) {
+  label.title {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav {
+    top: 60px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .questions {
+    margin-top: 400px;
+    padding: 5px;
+    box-sizing: content-box;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+  }
+}
+@media (width<= 600px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9b8fe9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active1,
+  a:hover {
+    background: none;
+    color: white;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .container3 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+}
+
+#wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5em;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1em;
+  border-top: 4px solid #1d1264;
+}
+h2 {
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+@media (max-width: 430px) {
+  nav {
+    margin: 0;
+    background: #12065f;
+    height: 80px;
+    width: 100%;
+    color: white;
+    display: block;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .checkbtn {
+    display: block;
+  }
+  nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: #12065f;
+  }
+  ul {
+    position: fixed;
+    display: flexbox;
+    background: #9b8fe9;
+    text-align: center;
+    transition: all 0.5s;
+  }
+} */
