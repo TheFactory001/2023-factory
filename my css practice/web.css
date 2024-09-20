@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 20px;
+  margin-right: 20px;
+  background-color: maroon;
+}
+.web {
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 45px;
+  color: white;
+}
+img {
+  border: 10px solid grey;
+  width: 600px;
+  padding: 10px;
+}
+
+.image {
+  margin-bottom: 60px;
+  float: right;
+  position: relative;
+  bottom: 150px;
+  /* transition-property: width;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out; */
+  transition: transform 1s;
+
+  /* animation-name: anim;
+  animation-duration: 4s; */
+}
+
+/* Css Animation */
+
+@keyframes anim {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: #fc6e51;
+  }
+  100% {
+    left: 500px;
+    top: 0;
+    background-color: aqua;
+  }
+}
+
+.image:hover {
+  width: 800px;
+  background-color: #fc6e51;
+  /* transform: rotate(90deg); */
+  /* transform: scale(0.5, 0.5); */
+  /* css 2dimentional trasform */
+  /* transform: skew(30deg, 20deg); */
+
+  /* css 3D trasnform x,y,z */
+  transform: rotateX(180deg);
+}
+.par {
+  font-size: 20px;
+}
