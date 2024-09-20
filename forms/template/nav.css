@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #2c3e50;
+}
+nav {
+  background: blue;
+  height: 80px;
+  width: 100%;
+}
+label.title {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  line-height: 80px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: gold;
+}
+h3 {
+  font-size: 36px;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  line-height: 2rem;
+}
+body form {
+  height: 70vh;
+  margin-top: 60px;
+  width: 50%;
+  position: relative;
+  background-color: transparent;
+  padding: 30px;
+  box-shadow: 0 0 5px 5px whitesmoke;
+  box-sizing: border-box;
+  -moz-box-align: center;
+  display: flex;
+  margin-left: 270px;
+}
+form input[type="text"],
+[type="Password"] {
+  width: 300px;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  box-shadow: 1px #7aa7ea;
+}
+.checkbox {
+  color: white;
+}
+button {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+}
+input:focus[type="text"],
+input:focus[type="password"] {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 4px #b9d3fa;
+}
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+.block {
+  box-shadow: #7aa7ea;
+}
+a {
+  color: rgb(235, 235, 72);
+}
+.login-box {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: black;
+}
+.checkbox {
+  display: flex;
+}
+.last-container {
+  display: flex;
+  justify-content: space-between;
+}
