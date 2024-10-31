@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EkoAgbaHub</title>
+    <link rel="stylesheet" href="css/log-signin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sign Up Form -->
+      <form id="signupForm" class="form">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+          <input type="text" id="signupName" required placeholder="Full Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" id="signupEmail" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <input
+            type="tel"
+            id="signupPhone"
+            placeholder="Phone Number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="signupstate"
+            placeholder="State of Residence"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="signupnation"
+            placeholder="Nationality"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="signupgender" placeholder="Gender" required />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="signupconfirmpass"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+
+        <div class="verification-method">
+          <label>
+            <input
+              type="radio"
+              name="verificationMethod"
+              value="email"
+              checked
+            />
+            Email OTP
+          </label>
+          <label>
+            <input type="radio" name="verificationMethod" value="phone" /> Phone
+            OTP
+          </label>
+        </div>
+        <button type="submit">Sign Up</button>
+        <div class="toggle-form">
+          Already have an account?
+          <a href="#" id="showLogin" style="text-decoration: none; color: #fff"
+            >Login</a
+          >
+        </div>
+      </form>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="form hidden">
+        <h2>Login</h2>
+        <div class="form-group">
+          <label for="loginnum">Phone Number</label>
+          <input type="number" id="loginnum" />
+        </div>
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required />
+        </div>
+        <button type="submit">
+          <a href="course.html"
+            >Login</a
+          >
+        </button>
+        <div class="toggle-form">
+          Don't have an account?
+          <a href="#" id="showSignup" 
+            >Sign Up</a
+          >
+        </div>
+      </form>
+
+      <!-- OTP Verification Form -->
+      <form id="otpForm" class="form hidden">
+        <h2>OTP Verification</h2>
+        <div class="form-group">
+          <label for="otp">Enter OTP</label>
+          <input
+            type="text"
+            id="otp"
+            class="otp-input"
+            maxlength="6"
+            required
+          />
+          <div id="otpMessage"></div>
+        </div>
+        <button type="submit">Verify OTP</button>
+        <button type="button" id="resendOtp">Resend OTP</button>
+      </form>
+    </div>
+
+    <script src="JS/log-signin.js"></script>
+  </body>
+</html>
